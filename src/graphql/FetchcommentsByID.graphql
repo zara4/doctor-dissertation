@@ -1,0 +1,10 @@
+query CommentByID($authorfileid: Float!) {
+  commentByID(authorfileid: $authorfileid) {
+    id
+    comment
+    reason
+    original
+    revised
+    Reviewerid
+  }
+}

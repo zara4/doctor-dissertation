@@ -1,0 +1,123 @@
+{
+  "Header": {
+    "title": "Doctor Dissertation",
+    "paragraph": "Doctor Dissertation helps rid of your APA referencing problems."
+  },
+  "About": {
+    "paragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  },
+  "Services": [
+    {
+      "icon": "fa fa-upload",
+      "name": "Upload Documents",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-check",
+      "name": "Quality Check",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-bell",
+      "name": "Suggestions on Formating Issues",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-compress",
+      "name": "Compare Document Formats",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-headphones",
+      "name": "Customer Service",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-download",
+      "name": "Download PDF Report",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    }
+  ],
+  "Pricing": [
+    {
+      "plan": "Basic Free Plan",
+      "price": "0",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "option1":"Lorem ipsum dolor sit amet",
+      "option2":"Lorem ipsum dolor sit amet",
+      "option3":"Lorem ipsum dolor sit amet",
+      "option4":"Lorem ipsum dolor sit amet",
+      "option5":"Lorem ipsum dolor sit amet",
+      "option6":"Lorem ipsum dolor sit amet",
+      "option7":"Lorem ipsum dolor sit amet",
+      "option8":"Lorem ipsum dolor sit amet"
+    },
+    {
+      "plan": "Pro Plan",
+      "price": "10",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "option1":"Lorem ipsum dolor sit amet",
+      "option2":"Lorem ipsum dolor sit amet",
+      "option3":"Lorem ipsum dolor sit amet",
+      "option4":"Lorem ipsum dolor sit amet",
+      "option5":"Lorem ipsum dolor sit amet",
+      "option6":"Lorem ipsum dolor sit amet",
+      "option7":"Lorem ipsum dolor sit amet",
+      "option8":"Lorem ipsum dolor sit amet"
+    },
+    {
+      "plan": "Enterprise Plan",
+      "price": "20",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "option1":"Lorem ipsum dolor sit amet",
+      "option2":"Lorem ipsum dolor sit amet",
+      "option3":"Lorem ipsum dolor sit amet",
+      "option4":"Lorem ipsum dolor sit amet",
+      "option5":"Lorem ipsum dolor sit amet",
+      "option6":"Lorem ipsum dolor sit amet",
+      "option7":"Lorem ipsum dolor sit amet",
+      "option8":"Lorem ipsum dolor sit amet"
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"",
+      "name": "Edward Johnson"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"",
+      "name": "Ken Cullen"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"",
+      "name": "Mellissa Tucker"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"",
+      "name": "Brian James"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"",
+      "name": "Bethney Sheffeild"
+    }
+  
+  ],
+  "Contact": {
+    "address": "Quisque nec neque placerat, luctus lacus eu, accumsan purus",
+    "phone": "+1 279229224343",
+    "email": "info@mso.gmail.com",
+    "facebook": "mso.fb.com",
+    "twitter": "mso.twitter.com",
+    "youtube": "mso.youtube.com"
+  }
+}

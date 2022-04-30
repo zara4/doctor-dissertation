@@ -1,0 +1,3 @@
+mutation AddFiles($filesdata: FilesInput!) {
+  addFiles(Filesdata: $filesdata)
+}

@@ -1,0 +1,12 @@
+query Fetchuser {
+  fetchuser {
+    email
+    name
+    version
+    files {
+      id
+      title
+      size
+    }
+  }
+}
