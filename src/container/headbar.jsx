@@ -1,4 +1,15 @@
+import { useState } from "react"
+
 const Headbar = (props) =>{
+  const [toggle,settoggle]=useState(false)
+  const handledown = () =>{
+    if(toggle === false){
+      settoggle(true)
+    }else settoggle(false)
+  }
+  const handleSignout = () =>{
+    window.location.href = '/';
+  }
     return(
         <div>
         <nav
@@ -90,7 +101,7 @@ const Headbar = (props) =>{
       <div class="dropdown relative">
         <a
           class="dropdown-toggle flex items-center hidden-arrow"
-          href="#"
+          onClick={handledown}
           id="dropdownMenuButton2"
           role="button"
           data-bs-toggle="dropdown"
@@ -107,6 +118,30 @@ const Headbar = (props) =>{
           <li class="text-xs text-white p-2" href="#">{props.type}</li>
           </ul> 
         </a>
+
+        <ul
+                className={"dropdown-menu min-w-max absolute bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 m-0 bg-clip-padding border-none left-auto right-0" + (toggle ? " ":"hidden invisible")}
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <a
+                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                    href="#"
+                  >Help</a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                    href="#"
+                  >Edit Profile</a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                    onClick={handleSignout}
+                  >Sign Out</a>
+                </li>
+              </ul>
       </div>
     </div>
   </div>

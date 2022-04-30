@@ -22,18 +22,18 @@ export type Comment = {
   authorfileId: Scalars['Int'];
   comment?: Maybe<Scalars['String']>;
   id: Scalars['Int'];
-  original?: Maybe<Scalars['String']>;
+  original: Scalars['String'];
   reason?: Maybe<Scalars['String']>;
   revised?: Maybe<Scalars['String']>;
 };
 
 export type CommentInput = {
+  Reviewerid: Scalars['String'];
   authorfileId: Scalars['Int'];
   comment: Scalars['String'];
   id: Scalars['Int'];
   original: Scalars['String'];
   reason: Scalars['String'];
-  reviewerid: Scalars['String'];
   revised: Scalars['String'];
 };
 
@@ -41,7 +41,7 @@ export type Files = {
   __typename?: 'Files';
   author: User;
   authorId: Scalars['Int'];
-  comments?: Maybe<Array<Comment>>;
+  comment?: Maybe<Array<Comment>>;
   id: Scalars['Int'];
   location: Scalars['String'];
   size: Scalars['String'];
@@ -59,10 +59,8 @@ export type FilesInput = {
 export type Mutation = {
   __typename?: 'Mutation';
   addComment: Scalars['Boolean'];
-  addComments: Scalars['Boolean'];
   addFiles: Scalars['Boolean'];
-  addMoreFiles: Scalars['Boolean'];
-  adduser: Scalars['Boolean'];
+  addUser: Scalars['Boolean'];
 };
 
 
@@ -71,48 +69,32 @@ export type MutationAddCommentArgs = {
 };
 
 
-export type MutationAddCommentsArgs = {
-  Commentdata: Array<CommentInput>;
-};
-
-
 export type MutationAddFilesArgs = {
   Filesdata: FilesInput;
 };
 
 
-export type MutationAddMoreFilesArgs = {
-  Filesdata: Array<FilesInput>;
-};
-
-
-export type MutationAdduserArgs = {
-  userdata: UserInput;
+export type MutationAddUserArgs = {
+  Userdata: UserInput;
 };
 
 export type Query = {
   __typename?: 'Query';
-  commentByID?: Maybe<Array<Comment>>;
+  CommentByID?: Maybe<Array<Comment>>;
+  UserByEmail?: Maybe<User>;
   fetchComment?: Maybe<Array<Comment>>;
   fetchFiles?: Maybe<Array<Files>>;
-  fetchuser?: Maybe<Array<User>>;
-  userByEmail?: Maybe<User>;
-  userByID?: Maybe<User>;
+  fetchUser?: Maybe<Array<User>>;
 };
 
 
 export type QueryCommentByIdArgs = {
-  authorfileid: Scalars['Float'];
+  authorfileId: Scalars['Float'];
 };
 
 
 export type QueryUserByEmailArgs = {
   email: Scalars['String'];
-};
-
-
-export type QueryUserByIdArgs = {
-  id: Scalars['Float'];
 };
 
 export enum Role {
@@ -122,20 +104,20 @@ export enum Role {
 
 export type User = {
   __typename?: 'User';
-  email: Scalars['String'];
+  email?: Maybe<Scalars['String']>;
   files?: Maybe<Array<Files>>;
   id: Scalars['Int'];
   name?: Maybe<Scalars['String']>;
-  password: Scalars['String'];
+  password?: Maybe<Scalars['String']>;
   role: Role;
   version?: Maybe<Scalars['String']>;
 };
 
 export type UserInput = {
-  email: Scalars['String'];
+  email?: InputMaybe<Scalars['String']>;
   id: Scalars['Int'];
   name?: InputMaybe<Scalars['String']>;
-  password: Scalars['String'];
+  password?: InputMaybe<Scalars['String']>;
   role: Role;
   version?: InputMaybe<Scalars['String']>;
 };
@@ -159,26 +141,26 @@ export type AdduserMutationVariables = Exact<{
 }>;
 
 
-export type AdduserMutation = { __typename?: 'Mutation', adduser: boolean };
+export type AdduserMutation = { __typename?: 'Mutation', addUser: boolean };
 
 export type CommentByIdQueryVariables = Exact<{
-  authorfileid: Scalars['Float'];
+  authorfileId: Scalars['Float'];
 }>;
 
 
-export type CommentByIdQuery = { __typename?: 'Query', commentByID?: Array<{ __typename?: 'Comment', id: number, comment?: string | null, reason?: string | null, original?: string | null, revised?: string | null, Reviewerid?: string | null }> | null };
+export type CommentByIdQuery = { __typename?: 'Query', CommentByID?: Array<{ __typename?: 'Comment', id: number, original: string, revised?: string | null, reason?: string | null, comment?: string | null, Reviewerid?: string | null }> | null };
 
 export type FetchuserQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type FetchuserQuery = { __typename?: 'Query', fetchuser?: Array<{ __typename?: 'User', email: string, name?: string | null, version?: string | null, files?: Array<{ __typename?: 'Files', id: number, title: string, size: string }> | null }> | null };
+export type FetchuserQuery = { __typename?: 'Query', fetchUser?: Array<{ __typename?: 'User', email?: string | null, name?: string | null, version?: string | null, files?: Array<{ __typename?: 'Files', id: number, title: string, size: string }> | null }> | null };
 
 export type UserByEmailQueryVariables = Exact<{
   email: Scalars['String'];
 }>;
 
 
-export type UserByEmailQuery = { __typename?: 'Query', userByEmail?: { __typename?: 'User', id: number, name?: string | null, password: string, role: Role, version?: string | null, files?: Array<{ __typename?: 'Files', id: number, location: string, size: string, title: string, comments?: Array<{ __typename?: 'Comment', original?: string | null, reason?: string | null, revised?: string | null, id: number }> | null }> | null } | null };
+export type UserByEmailQuery = { __typename?: 'Query', UserByEmail?: { __typename?: 'User', id: number, name?: string | null, email?: string | null, version?: string | null, password?: string | null, files?: Array<{ __typename?: 'Files', id: number, title: string, location: string, size: string, comment?: Array<{ __typename?: 'Comment', id: number, original: string, revised?: string | null, comment?: string | null, Reviewerid?: string | null }> | null }> | null } | null };
 
 
 export const MutationDocument = gql`
@@ -244,8 +226,8 @@ export type AddFilesMutationHookResult = ReturnType<typeof useAddFilesMutation>;
 export type AddFilesMutationResult = Apollo.MutationResult<AddFilesMutation>;
 export type AddFilesMutationOptions = Apollo.BaseMutationOptions<AddFilesMutation, AddFilesMutationVariables>;
 export const AdduserDocument = gql`
-    mutation Adduser($userdata: UserInput!) {
-  adduser(userdata: $userdata)
+    mutation Adduser($userdata: userInput!) {
+  addUser(Userdata: $userdata)
 }
     `;
 export type AdduserMutationFn = Apollo.MutationFunction<AdduserMutation, AdduserMutationVariables>;
@@ -275,13 +257,13 @@ export type AdduserMutationHookResult = ReturnType<typeof useAdduserMutation>;
 export type AdduserMutationResult = Apollo.MutationResult<AdduserMutation>;
 export type AdduserMutationOptions = Apollo.BaseMutationOptions<AdduserMutation, AdduserMutationVariables>;
 export const CommentByIdDocument = gql`
-    query CommentByID($authorfileid: Float!) {
-  commentByID(authorfileid: $authorfileid) {
+    query CommentByID($authorfileId: Float!) {
+  CommentByID(authorfileId: $authorfileId) {
     id
-    comment
-    reason
     original
     revised
+    reason
+    comment
     Reviewerid
   }
 }
@@ -299,7 +281,7 @@ export const CommentByIdDocument = gql`
  * @example
  * const { data, loading, error } = useCommentByIdQuery({
  *   variables: {
- *      authorfileid: // value for 'authorfileid'
+ *      authorfileId: // value for 'authorfileId'
  *   },
  * });
  */
@@ -316,7 +298,7 @@ export type CommentByIdLazyQueryHookResult = ReturnType<typeof useCommentByIdLaz
 export type CommentByIdQueryResult = Apollo.QueryResult<CommentByIdQuery, CommentByIdQueryVariables>;
 export const FetchuserDocument = gql`
     query Fetchuser {
-  fetchuser {
+  fetchUser {
     email
     name
     version
@@ -357,22 +339,23 @@ export type FetchuserLazyQueryHookResult = ReturnType<typeof useFetchuserLazyQue
 export type FetchuserQueryResult = Apollo.QueryResult<FetchuserQuery, FetchuserQueryVariables>;
 export const UserByEmailDocument = gql`
     query UserByEmail($email: String!) {
-  userByEmail(email: $email) {
+  UserByEmail(email: $email) {
     id
     name
-    password
-    role
+    email
     version
+    password
     files {
       id
+      title
       location
       size
-      title
-      comments {
-        original
-        reason
-        revised
+      comment {
         id
+        original
+        revised
+        comment
+        Reviewerid
       }
     }
   }

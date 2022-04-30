@@ -10,14 +10,17 @@ import size from '../Progress Report.docx'
 const Matrix = () => {
   const location = useLocation();
   const comments =[]
+  console.log(location.state.user.filename)
   const {data,loading,error} =useCommentByIdQuery({
-      fetchPolicy:"network-only",
       variables:{
-         authorfileid: location.state.user.authorfile
+         authorfileId: location.state.user.authorfile
       } 
   });
   function loadFile(url, callback) {
     PizZipUtils.getBinaryContent(url, callback);
+}
+if(data){
+  console.log(data.CommentByID)
 }
 const generateDocument = () => {
   const date= new Date().toLocaleString()
@@ -35,7 +38,7 @@ const generateDocument = () => {
           doc.render({
               first_name: location.state.user.user.name,
               Date: date,
-              title: location.state.user.title,
+              title: location.state.user.filename,
               comments
            });
           const out = doc.getZip().generate({
@@ -50,7 +53,7 @@ const generateDocument = () => {
 
   const commentsArray = () =>{
       let res
-     data.commentByID.forEach((comment,i)=>{
+     data.CommentByID.forEach((comment,i)=>{
        i++
        res ={
         number:""+i,
@@ -64,6 +67,7 @@ const generateDocument = () => {
   }
   if(location.state.matrix && data && comments.length === 0){
     commentsArray()
+    console.log()
   }  
   if(loading)
   return <div class="flex items-center justify-center">
@@ -77,8 +81,9 @@ const generateDocument = () => {
     <span class="visually-hidden">Loading...</span>
   </div>
 </div> 
-if(data.commentByID.length == 0)
-return     <div class="flex justify-center">
+if(!data)
+return   
+<div class="flex justify-center">
 <div class="block rounded-lg shadow-lg bg-white max-w-sm text-center py-96">
   <div class="p-6">
     <h5 class="text-gray-900 text-xl font-medium mb-2">No comments added yet</h5>
@@ -91,7 +96,7 @@ return     <div class="flex justify-center">
 
 if(error)
   return <div>{error.message}</div>
-  return (
+  return ( 
     <div className="flex flex-col container pb-60">
     <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 p-5">
     <div class="flex justify-end">
@@ -117,7 +122,7 @@ if(error)
                  Page no </th>
                   </tr> </thead>
                  <tbody className="bg-white divide-y divide-gray-200">
-                  {data.commentByID.map((comments,i) => (
+                  {data.CommentByID.map((comments,i) => (
                   <tr key={i}>
                       <td className="px-6 py-4 whitespace-nowrap">
                        <div className="flex items-center">

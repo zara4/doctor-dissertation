@@ -35,7 +35,7 @@ const Addcomment = () => {
                         reason:reason,
                         original:Originaltext,
                         revised:revision,
-                        reviewerid:reviewerId,
+                        Reviewerid:reviewerId,
                         authorfileId:authorfileId
                     }
                 }

@@ -1,3 +1,3 @@
-mutation Adduser($userdata: UserInput!) {
-  adduser(userdata: $userdata)
+mutation Adduser($userdata: userInput!) {
+  addUser(Userdata: $userdata)
 }

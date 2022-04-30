@@ -1,4 +1,4 @@
-import { FaAccessibleIcon, FaFile, FaFileCode, FaHome, FaSalesforce, FaUber, FaUser } from "react-icons/fa"
+import { FaFile, FaFileCode, FaHome, FaSalesforce, FaUser } from "react-icons/fa"
 import { MdSettings } from "react-icons/md"
 
 const Sidebar = () =>{
@@ -6,7 +6,7 @@ const Sidebar = () =>{
 <div class="w-60 h-full shadow-xl bg-green-900 absolute" id="sidenavSecExample">
   <ul class="relative px-1">
     <li class="relative">
-      <a class="flex items-center text-s py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-green-600 hover:bg-green-50 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+      <a class="flex items-center text-s py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-green-600 hover:bg-green-50 transition duration-300 ease-in-out" href="admin" data-mdb-ripple="true" data-mdb-ripple-color="primary">
         <FaHome class="w-6 h-6 mr-3" />
         <span>Dashboard</span>
       </a>
@@ -14,7 +14,7 @@ const Sidebar = () =>{
   </ul>
   <ul class="relative px-1">
     <li class="relative">
-      <a class="flex items-center text-s py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-green-600 hover:bg-green-50 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+      <a class="flex items-center text-s py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-green-600 hover:bg-green-50 transition duration-300 ease-in-out" href="users" data-mdb-ripple="true" data-mdb-ripple-color="primary">
         <FaUser class="w-6 h-6 mr-3" />
         <span>Users</span>
       </a>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useFetchuserQuery } from '../../generated/graphql';
-import AdminNav from '../admin-nav';
 
 function Users() {
     const {data,loading,error} =useFetchuserQuery({
@@ -16,10 +15,10 @@ function Users() {
     if(!data || data === undefined)
     <div class="flex justify-center items-center">
     <div class="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full" role="status">
-      <span class="visually-hidden">Loading...</span>
+      <span class="visually-hidden"></span>
     </div>
   </div> 
-  if(data.fetchuser.length == 0)
+  if(!data)
   return     
 <div class="flex justify-center">
   <div class="block rounded-lg shadow-lg bg-white max-w-sm text-center py-96">
@@ -55,7 +54,7 @@ return (
                  Version</th>
                  </tr> </thead>
                  <tbody className="bg-white divide-y divide-gray-200">
-                  {data.fetchuser.map((users,i) => (
+                  {data.fetchUser.map((users,i) => (
                   <tr key={i}>
                       <td className="px-6 py-4 whitespace-nowrap">
                        <div className="flex items-center">

@@ -27,7 +27,13 @@ const App = () => {
           <Route exact path="/signup" element={<Signup/>}/>
           <Route path="/signup/login" element={<Login/>}/>
           <Route path="/signup/login/home" element={<Home/>}/>
-          <Route path="/signup/login/upload" element={<DropFileInput/>}/>
+          <Route path="/signup/login/home/upload" element={<DropFileInput/>}/>
+          <Route path="/signup/login/home/document/matrix-report" element={<Blank/>}/>
+          <Route path="/signup/login/home/upload/document/addcomments" element={<Addcomment/>}/>
+          <Route path="/signup/login/home/upload/document/addcomments/matrix-report" element={<Blank />}/>
+          <Route path="/signup/login/home/upload/document/matrix-report" element={<Blank/>}/>
+          <Route path="/signup/login/home/upload/document" element={<Blank/>}/>
+          <Route path="/signup/login/home/document" element={<Blank/>}/>
           <Route path="/login/home/upload/document" element={<Blank/>}/>
           <Route path="/login/home/document" element={<Blank/>}/>
           <Route path="/login/home/document/matrix-report" element={<Blank/>}/>
@@ -35,7 +41,7 @@ const App = () => {
           <Route path="/login/home/upload/document/addcomments/matrix-report" element={<Blank />}/>
           <Route path="/login/home/upload/document/matrix-report" element={<Blank/>}/>
           <Route exact path="/login/admin" element={<Admin data={landingPageData.Testimonials} />} />
-          <Route exact path="/login/admin/users" element={<Main/>}/>
+          <Route exact path="/login/users" element={<Main/>}/>
         </Routes>
     </Router>
   );

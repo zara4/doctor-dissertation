@@ -1,5 +1,5 @@
 query Fetchuser {
-  fetchuser {
+  fetchUser {
     email
     name
     version

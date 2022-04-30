@@ -13,6 +13,7 @@ const Login= () =>{
   });
   
     function handlesignin(){
+      console.log(data.UserByEmail)
         if(email === ""||password === ""){
         alert("Please fill in all the feild required")
       }else if(email === "admin" && password === "admin123"){
@@ -20,8 +21,8 @@ const Login= () =>{
       }
       if(error){
         console.log("database error.... server is not running",error.message)
-      }else if(data.userByEmail.password === password)
-          navigate('home', { state: data.userByEmail });
+      }else if(data.UserByEmail.password === password)
+          navigate('home', { state: data.UserByEmail });
       else alert("Either Username or password doesnot match")
     }
          return (
