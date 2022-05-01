@@ -40,43 +40,41 @@
   ],
   "Pricing": [
     {
-      "plan": "Basic Free Plan",
+      "plan": "Free Version- Student",
       "price": "0",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "option1":"Lorem ipsum dolor sit amet",
-      "option2":"Lorem ipsum dolor sit amet",
-      "option3":"Lorem ipsum dolor sit amet",
-      "option4":"Lorem ipsum dolor sit amet",
-      "option5":"Lorem ipsum dolor sit amet",
-      "option6":"Lorem ipsum dolor sit amet",
-      "option7":"Lorem ipsum dolor sit amet",
-      "option8":"Lorem ipsum dolor sit amet"
+      "option1":"APA 7th Edition Formatting Assistance",
+      "option2":"Comment Report (doesnot sync)"
     },
     {
-      "plan": "Pro Plan",
-      "price": "10",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "option1":"Lorem ipsum dolor sit amet",
-      "option2":"Lorem ipsum dolor sit amet",
-      "option3":"Lorem ipsum dolor sit amet",
-      "option4":"Lorem ipsum dolor sit amet",
-      "option5":"Lorem ipsum dolor sit amet",
-      "option6":"Lorem ipsum dolor sit amet",
-      "option7":"Lorem ipsum dolor sit amet",
-      "option8":"Lorem ipsum dolor sit amet"
-    },
-    {
-      "plan": "Enterprise Plan",
+      "plan": "Paid Version- Student PLUS",
       "price": "20",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "option1":"Lorem ipsum dolor sit amet",
-      "option2":"Lorem ipsum dolor sit amet",
-      "option3":"Lorem ipsum dolor sit amet",
-      "option4":"Lorem ipsum dolor sit amet",
-      "option5":"Lorem ipsum dolor sit amet",
-      "option6":"Lorem ipsum dolor sit amet",
-      "option7":"Lorem ipsum dolor sit amet",
-      "option8":"Lorem ipsum dolor sit amet"
+      "option1":"APA 7th Edition Formatting Assistance",
+      "option2":"Comment Report (sync)"
+    },
+    {
+      "plan": "Paid Version - Scholar",
+      "price": "54",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "option1":"APA 7th Edition Formatting Assistance",
+      "option2":"Comment Report (sync)",
+      "option3":"Audio Transcription",
+      "option4":"Theme Color Coding",
+      "option5":"Reference Manager"
+    },
+    {
+      "plan": "Paid Version - Scholar PLUS",
+      "price": "108",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "option1":"APA 7th Edition Formatting Assistance",
+      "option2":"Comment Report (sync)",
+      "option3":"Audio Transcription",
+      "option4":"Theme Color Coding",
+      "option5":"Reference Manager",
+      "option6":"AI-Dissertation Writing Assistance",
+      "option7":"Dissertation Template ",
+      "option8":"Browser Ext"
     }
   ],
   "Testimonials": [

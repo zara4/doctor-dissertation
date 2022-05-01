@@ -19,7 +19,7 @@ const Login= () =>{
       }else if(email === "admin" && password === "admin123"){
           navigate('admin'); 
       }
-      if(error){
+      else if(error){
         console.log("database error.... server is not running",error.message)
       }else if(data.UserByEmail.password === password)
           navigate('home', { state: data.UserByEmail });
