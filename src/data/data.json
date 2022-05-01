@@ -1,0 +1,121 @@
+{
+  "Header": {
+    "title": "Doctor Dissertation",
+    "paragraph": "Doctor Dissertation helps rid of your APA referencing problems."
+  },
+  "About": {
+    "paragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  },
+  "Services": [
+    {
+      "icon": "fa fa-upload",
+      "name": "Upload Documents",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-check",
+      "name": "Quality Check",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-bell",
+      "name": "Suggestions on Formating Issues",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-compress",
+      "name": "Compare Document Formats",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-headphones",
+      "name": "Customer Service",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-download",
+      "name": "Download PDF Report",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    }
+  ],
+  "Pricing": [
+    {
+      "plan": "Free Version- Student",
+      "price": "0",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "option1":"APA 7th Edition Formatting Assistance",
+      "option2":"Comment Report (doesnot sync)"
+    },
+    {
+      "plan": "Paid Version- Student PLUS",
+      "price": "20",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "option1":"APA 7th Edition Formatting Assistance",
+      "option2":"Comment Report (sync)"
+    },
+    {
+      "plan": "Paid Version - Scholar",
+      "price": "54",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "option1":"APA 7th Edition Formatting Assistance",
+      "option2":"Comment Report (sync)",
+      "option3":"Audio Transcription",
+      "option4":"Theme Color Coding",
+      "option5":"Reference Manager"
+    },
+    {
+      "plan": "Paid Version - Scholar PLUS",
+      "price": "108",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "option1":"APA 7th Edition Formatting Assistance",
+      "option2":"Comment Report (sync)",
+      "option3":"Audio Transcription",
+      "option4":"Theme Color Coding",
+      "option5":"Reference Manager",
+      "option6":"AI-Dissertation Writing Assistance",
+      "option7":"Dissertation Template ",
+      "option8":"Browser Ext"
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"",
+      "name": "Edward Johnson"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"",
+      "name": "Ken Cullen"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"",
+      "name": "Mellissa Tucker"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"",
+      "name": "Brian James"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"",
+      "name": "Bethney Sheffeild"
+    }
+  
+  ],
+  "Contact": {
+    "address": "Quisque nec neque placerat, luctus lacus eu, accumsan purus",
+    "phone": "+1 279229224343",
+    "email": "info@mso.gmail.com",
+    "facebook": "mso.fb.com",
+    "twitter": "mso.twitter.com",
+    "youtube": "mso.youtube.com"
+  }
+}

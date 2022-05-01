@@ -1,0 +1,22 @@
+query UserByEmail($email: String!) {
+  UserByEmail(email: $email) {
+    id
+    name
+    email
+    version
+    password
+    files {
+      id
+      title
+      location
+      size
+      comment {
+        id
+        original
+        revised
+        comment
+        Reviewerid
+      }
+    }
+  }
+}    
